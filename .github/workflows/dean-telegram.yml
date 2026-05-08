@@ -89,7 +89,7 @@ jobs:
             logs/
           if-no-files-found: error
 
-            - name: Send Telegram reply
+          - name: Send Telegram reply
         run: |
           python - <<'PY'
           import json
