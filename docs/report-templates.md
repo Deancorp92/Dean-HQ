@@ -1,84 +1,84 @@
-# Report Templates
+# 보고서 포맷
 
-## Purpose
-Standardize how Dean reports to the user.
+## 목적
+Dean이 사용자에게 보고할 때의 형식을 표준화한다.
 
-## Report Structure
+## 보고 구조
 
-### 1. Request Summary
-- Request name:
-- Request source:
-- Request time:
-- Related department:
-- Urgency:
+### 1. 요청 요약
+- 요청명:
+- 요청 출처:
+- 접수일시:
+- 관련 부서:
+- 긴급도:
 
-### 2. Situation Summary
-Write a short paragraph describing:
-- what happened
-- why it matters
-- what is currently blocked
-- whether user approval is needed
+### 2. 상황 요약
+현재 상황을 짧은 문단으로 정리한다.
+- 무슨 일이 있었는지
+- 왜 중요한지
+- 현재 어디가 막혀 있는지
+- 사용자 승인 필요 여부가 있는지
 
-### 3. Dean Final Opinion
-Write one paragraph only.
-Keep it short, direct, and decision-oriented.
+### 3. Dean 최종 의견
+반드시 1문단으로만 작성한다.
+짧고, 직접적이고, 판단 중심으로 작성한다.
 
-Example:
-"Current request appears suitable for execution after confirming the priority order. From a communication-efficiency standpoint, the Management Department should review risk first, followed by Business Development and Product Development. This item is classified as per-case approval."
+예시:
+"현재 요청은 우선순위와 승인 범위를 먼저 정해야 하는 사안으로 판단됩니다. 소통 효율을 고려할 때 경영부가 먼저 리스크를 검토하고, 이후 사업개발부와 상품개발부가 순차적으로 검토하는 방식이 적절합니다. 본 건은 건별 승인 대상으로 분류하는 것이 타당합니다."
 
-### 4. Checklist Decision Options
-Use checkboxes only.
+### 4. 빠른 선택지
+체크박스만 사용한다.
 
-- [ ] Always approval
-- [ ] Per-case approval
-- [ ] Rejected
-- [ ] Additional review needed
-- [ ] Ready to execute
-- [ ] User approval required
+- [ ] 항시 승인
+- [ ] 건별 승인
+- [ ] 비승인
+- [ ] 추가 검토 필요
+- [ ] 즉시 실행 가능
+- [ ] 대표 승인 필요
 
-### 5. Department Notes
-#### Management Department
-- Findings:
-- Risks:
-- Required approvals:
-- Dean decision:
+### 5. 부서별 보고
+#### 경영부
+- 확인 내용:
+- 리스크:
+- 필요한 승인:
+- Dean 판단:
 
-#### Business Development Department
-- Findings:
-- Business value:
-- Priority:
-- Dean decision:
+#### 사업개발부
+- 확인 내용:
+- 사업 가치:
+- 우선순위:
+- Dean 판단:
 
-#### Product Development Department
-- Findings:
-- Feasibility:
-- Deliverables:
-- Dean decision:
+#### 상품개발부
+- 확인 내용:
+- 구현 가능성:
+- 산출물:
+- Dean 판단:
 
-### 6. Dean Decision Items
-- Approved:
-- Deferred:
-- Rejected:
-- Conditions:
-- User action required:
+### 6. Dean 결정 사항
+- 승인:
+- 보류:
+- 반려:
+- 조건:
+- 대표 확인 필요 사항:
 
-### 7. Next Action
-- Immediate action:
-- Waiting item:
-- Recheck item:
-- Archive item:
-- Approval status:
+### 7. 다음 액션
+- 즉시 수행:
+- 담당자:
+- 대기 사항:
+- 아카이브 여부:
+- 승인 상태:
 
-## Writing Rules
-- Keep the final opinion in one paragraph.
-- Put options in checklist form.
-- Put detailed notes under department sections.
-- Avoid long explanations unless needed.
-- Make the report easy to scan in under one minute.
+## 작성 규칙
+- 최종 의견은 반드시 1문단으로 작성한다.
+- 선택지는 체크리스트 형태로 제시한다.
+- 상세 내용은 부서별 항목으로 분리한다.
+- 불필요하게 길게 쓰지 않는다.
+- 1분 안에 훑어볼 수 있게 작성한다.
 
-## Version Rule
-When this template changes:
-1. Create a new version.
-2. Save the old version as legacy.
-3. Record the change reason.
-4. Update the changelog.
+## 버전 규칙
+이 포맷이 바뀌면:
+1. 새 버전을 만든다.
+2. 기존 버전은 레거시로 보관한다.
+3. 변경 사유를 기록한다.
+4. 변경 이력을 갱신한다.
