@@ -74,17 +74,24 @@ jobs:
           if msg_type not in ["approval", "change", "execution"]:
               msg_type = "execution"
 
+          if msg_type == "approval":
+              archive_dir = "archive/legacy"
+          elif msg_type == "change":
+              archive_dir = "archive/reports"
+          else:
+              archive_dir = "archive/reports"
+
           result = {
               "type": msg_type,
               "status": "success",
               "summary": f"Processed {req['command']}",
               "details": req,
-              "saved_location": f"logs/{msg_type}/run.log",
+              "saved_location": f"{archive_dir}/result.json",
               "next_action": "awaiting approval"
           }
 
           os.makedirs("outputs", exist_ok=True)
-          os.makedirs("archive/reports", exist_ok=True)
+          os.makedirs(archive_dir, exist_ok=True)
           os.makedirs(f"logs/{msg_type}", exist_ok=True)
 
           with open("outputs/result.json", "w", encoding="utf-8") as f:
@@ -93,7 +100,7 @@ jobs:
           with open(f"logs/{msg_type}/run.log", "a", encoding="utf-8") as f:
               f.write(f"{datetime.datetime.utcnow().isoformat()}Z {json.dumps(result, ensure_ascii=False)}\n")
 
-          with open("archive/reports/result.json", "w", encoding="utf-8") as f:
+          with open(f"{archive_dir}/result.json", "w", encoding="utf-8") as f:
               json.dump(result, f, ensure_ascii=False, indent=2)
           PY
 
