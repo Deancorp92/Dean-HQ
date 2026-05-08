@@ -1,0 +1,45 @@
+name: Dean Triage
+
+on:
+  issues:
+    types: [opened, edited, reopened]
+  pull_request:
+    types: [opened, edited, reopened]
+  workflow_dispatch:
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Load Dean rules
+        run: |
+          echo "Loading Dean agent rules..."
+          cat agents/dean.md
+          cat policies/approval-rules.md
+          cat docs/report-templates.md
+
+      - name: Classify request
+        run: |
+          echo "Classifying request by:
+          - approval need
+          - department routing
+          - archive requirement
+          - user decision requirement"
+
+      - name: Output triage result
+        run: |
+          echo "Dean triage completed."
+
+      - name: Create report note
+        run: |
+          echo "Dean should produce:
+          1. Request summary
+          2. Final opinion
+          3. Checklist
+          4. Department notes
+          5. Decision items
+          6. Next action"
